@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# 📝 To-Do List App - Front-End Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge)
 
-## Available Scripts
+Uma aplicação web de gerenciamento de tarefas (To-Do List) desenvolvida como solução para um desafio técnico de Front-End. O projeto tem como foco principal a usabilidade, o design responsivo e o gerenciamento eficiente de estado no lado do cliente.
 
-In the project directory, you can run:
+> 🔗 **[Link para o projeto em produção]** *(Insira o link do Vercel/Netlify aqui quando fizer o deploy)*
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💡 Sobre o Projeto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O objetivo deste projeto foi reproduzir fielmente um design proposto no Figma, implementando a interface e a lógica de negócios utilizando **React.js**. A aplicação permite que o usuário gerencie suas tarefas diárias de forma intuitiva, com suporte nativo a transições de tema (Dark/Light mode) e adaptação perfeita para dispositivos móveis (Mobile First).
 
-### `npm test`
+### 📸 Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*(Dica: Tire prints da sua tela e adicione as imagens na sua pasta do GitHub, depois substitua os caminhos abaixo)*
 
-### `npm run build`
+| Light Mode | Dark Mode | Mobile (Menu Aberto) |
+| :---: | :---: | :---: |
+| `<img src="./caminho-da-imagem-light.png" width="250">` | `<img src="./caminho-da-imagem-dark.png" width="250">` | `<img src="./caminho-da-imagem-mobile.png" width="250">` |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ✨ Funcionalidades Principais
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **CRUD Completo de Tarefas:** Adição (via botão ou tecla `Enter`), listagem, marcação de conclusão e exclusão de tarefas.
+- **Filtros Dinâmicos de Estado:** Sistema de abas ("All", "Active", "Completed") que renderiza os dados filtrados em tempo real, sem recarregar a página.
+- **Renderização Condicional (Empty States):** Feedback visual com ilustrações customizadas para quando a lista (ou a aba selecionada) não possuir itens.
+- **Dark Mode Nativo:** Alternância de tema gerenciada por estado e integrada diretamente com as classes utilitárias do Tailwind CSS.
+- **Design Totalmente Responsivo:**
+  - **Desktop:** Layout com Sidebar fixa lateral.
+  - **Mobile:** Sidebar convertida em um menu lateral deslizante (*Drawer*) com botão *Hamburguer* e *Overlay* escurecido para fechamento via clique externo.
+- **Micro-interações (UX):** Efeitos de *hover*, transições de cores (`duration-300`), e botões de ação (editar/excluir) que aparecem de forma contextual no desktop e ficam fixos no mobile.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠️ Tecnologias e Ferramentas
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+As seguintes ferramentas foram utilizadas na construção do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **[React.js](https://reactjs.org/):** Escolhido pela sua arquitetura baseada em componentes e flexibilidade no gerenciamento do DOM virtual. O controle de estado da aplicação foi feito utilizando Hooks (`useState`).
+- **[Tailwind CSS](https://tailwindcss.com/):** Utilizado para estilização. Permitiu um desenvolvimento ágil diretamente no JSX, além de facilitar imensamente a implementação da responsividade e do modo escuro.
+- **[Lucide React](https://lucide.dev/):** Biblioteca de ícones moderna e leve, garantindo consistência visual com o protótipo.
+- **Node.js & npm:** Gerenciamento do ambiente e dependências.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 Estrutura do Projeto
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A arquitetura do projeto foi mantida simples e direta, ideal para aplicações SPA (Single Page Applications) de pequeno/médio porte:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+to-do-list/
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── profile-pic.png         # Foto de perfil estática
+│   │   └── task-illustration.png   # Ilustração do Empty State
+│   ├── App.js                      # Componente principal (Lógica e UI)
+│   ├── index.css                   # Diretivas do Tailwind
+│   └── index.js                    # Ponto de entrada do React
+├── tailwind.config.js              # Configurações do tema e Dark Mode
+└── package.json
