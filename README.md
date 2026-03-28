@@ -14,14 +14,6 @@ Uma aplicação web de gerenciamento de tarefas (To-Do List) desenvolvida como s
 
 O objetivo deste projeto foi reproduzir fielmente um design proposto no Figma, implementando a interface e a lógica de negócios utilizando **React.js**. A aplicação permite que o usuário gerencie suas tarefas diárias de forma intuitiva, com suporte nativo a transições de tema (Dark/Light mode) e adaptação perfeita para dispositivos móveis (Mobile First).
 
-### 📸 Screenshots
-
-*(Dica: Tire prints da sua tela e adicione as imagens na sua pasta do GitHub, depois substitua os caminhos abaixo)*
-
-| Light Mode | Dark Mode | Mobile (Menu Aberto) |
-| :---: | :---: | :---: |
-| `<img src="./caminho-da-imagem-light.png" width="250">` | `<img src="./caminho-da-imagem-dark.png" width="250">` | `<img src="./caminho-da-imagem-mobile.png" width="250">` |
-
 ---
 
 ## ✨ Funcionalidades Principais
