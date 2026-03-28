@@ -6,7 +6,7 @@
 
 Uma aplicação web de gerenciamento de tarefas (To-Do List) desenvolvida como solução para um desafio técnico de Front-End. O projeto tem como foco principal a usabilidade, o design responsivo e o gerenciamento eficiente de estado no lado do cliente.
 
-> 🔗 *Deploy em produção do projeto: * **(https://to-do-list-three-theta-42.vercel.app)**
+> 🔗 *Deploy do projeto: * **https://react-to-do-list-2002.vercel.app**
 
 ---
 
