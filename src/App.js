@@ -4,7 +4,7 @@ import { Menu, Moon, Sun, Settings, ListTodo, Plus, Edit2, Trash2, Square, Check
 import taskIllustration from './assets/task-illustration.png';
 
 function App() {
-  // 1. CARREGAMENTO INICIAL (Lendo do localStorage)
+  //CARREGAMENTO INICIAL (Lendo do localStorage)
   const [tasks, setTasks] = useState(() => {
     const savedTasks = localStorage.getItem('minhasTarefas');
     // Se tiver algo salvo, converte de texto para objeto. Se não, começa vazio [].
@@ -12,7 +12,7 @@ function App() {
   });
 
   const [activeTab, setActiveTab] = useState('All');
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -20,7 +20,7 @@ function App() {
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [editingText, setEditingText] = useState('');
 
-  // 2. USEEFFECT: Salvando automaticamente no localStorage sempre que 'tasks' mudar
+  //USEEFFECT: Salvando automaticamente no localStorage sempre que a task mudar
   useEffect(() => {
     localStorage.setItem('minhasTarefas', JSON.stringify(tasks));
   }, [tasks]);
@@ -46,7 +46,7 @@ function App() {
     setTasks(tasks.filter(task => task.id !== taskId));
   };
 
-  // NOVO: Funções de Edição
+  //Funções de Edição
   const handleStartEditing = (task) => {
     setEditingTaskId(task.id);
     setEditingText(task.text);
