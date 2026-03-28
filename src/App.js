@@ -19,12 +19,12 @@ function App() {
   const [editingTaskId, setEditingTaskId] = useState(null);
   const [editingText, setEditingText] = useState('');
 
-  // 1. useEffect: Salva tarefas automaticamente
+  //Salva tarefas automaticamente
   useEffect(() => {
     localStorage.setItem('minhasTarefas', JSON.stringify(tasks));
   }, [tasks]);
 
-  // 2. useCallback: Memoriza as funções para não recriá-arlas a cada renderização
+  //Memoriza as funções para não recriá-arlas a cada renderização
   const handleAddTask = useCallback(() => {
     if (inputValue.trim() === '') return;
     const newTask = { id: Date.now(), text: inputValue, completed: false };
@@ -55,7 +55,7 @@ function App() {
     setEditingTaskId(null);
   }, [editingText]);
 
-  // 3. useMemo: Só recalcula os filtros se a lista de tarefas ou a aba ativa mudarem
+  //Só recalcula os filtros se a lista de tarefas ou a aba ativa mudarem
   const filteredTasks = useMemo(() => {
     return tasks.filter(task => {
       if (activeTab === 'Active') return !task.completed;

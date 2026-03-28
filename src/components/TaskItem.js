@@ -58,5 +58,5 @@ function TaskItem({
     );
 }
 
-// React.memo junto com useCallback faz a mágica da performance acontecer
+// React.memo junto com useCallback faz performance acontecer
 export default React.memo(TaskItem);
